@@ -21,6 +21,11 @@ router.beforeEach((to,from,next)=>{
     //console.log(to)
     store.commit('setIsDelete',false)
   }
+  if(store.getters.isLogined===true){
+    api.msg.getMsgCount(store.getters.user.uid,store.getters.user.name).then((res)=>{
+      store.commit('setMsgCount',res.data)
+    })
+  }
   next()
 })
 new Vue({

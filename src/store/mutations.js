@@ -15,4 +15,10 @@ export default {
   setIsDelete: (state,param) => {
     state.isDelete = param
   },
+  setMsgCount: (state,param) => {
+    state.msgCount = param
+  },
+  descMsgCount: (state,param = 1) => {
+    state.msgCount -= param
+  },
 }

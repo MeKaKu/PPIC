@@ -53,7 +53,7 @@ export default {
         {
           name: '图搜',
           icon: 'el-icon-search',
-          routePath: '/forum',
+          routePath: '/milvusSearch',
         },
         {
           name: this.$t('message.album'),

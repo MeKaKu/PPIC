@@ -17,6 +17,7 @@ const state = {
   serverAddress: 'http://180.76.167.81:8878',//后端服务器地址
   pictureBaseUrl: 'https://ppic-1301960877.cos.ap-chengdu.myqcloud.com',//对象存储服务器地址
   isDelete: false,
+  msgCount: 0,//消息数目
   //likeStatus: null, //点赞状态
   //detail: null,//查看的图片详细信息
   //collectBoolean: false,

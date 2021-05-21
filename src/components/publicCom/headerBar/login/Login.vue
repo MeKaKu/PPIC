@@ -159,6 +159,7 @@ export default {
       await this.$store.dispatch('setLoginBoolean');
       await this.$store.dispatch('setIsLogined',true);
       this.$message.success("登录成功");
+      this.$router.push('/').catch(()=>{})
       //console.log(this.$store.state.user)
     },
     getCode(){

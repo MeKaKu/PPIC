@@ -1,6 +1,11 @@
 <template>
   <div id="logined">
-    <el-dropdown trigger="click" @command="clickMenu">
+    <el-badge :value="msgCount" class="msg-but" type="primary" :hidden="msgCount===0">
+      <el-tooltip class="item" effect="dark" content="消息" placement="bottom">
+        <i class="el-icon-message" style="font-size: 1.8em" @click="goMsg"></i>
+      </el-tooltip>
+    </el-badge>
+    <el-dropdown trigger="hover" @command="clickMenu">
       <el-dropdown-menu slot="dropdown">
         <el-dropdown-item
             v-for="item of MenuList"
@@ -117,7 +122,7 @@ export default {
     }
   },
   computed:{
-    ...mapGetters(['user']),
+    ...mapGetters(['user','msgCount']),
     MenuList() {
       return [
         {
@@ -166,7 +171,8 @@ export default {
         localStorage.removeItem('user')
         this.$store.dispatch('setUser',{})
         this.$store.dispatch('setIsLogined',false)
-        let routeHistory=history.length-1;
+        let routeHistory=history.length-2;
+        if(routeHistory<0) routeHistory=0;
         this.$router.go(-routeHistory);
         this.$router.push("/home").catch(()=>{})
       }
@@ -278,6 +284,9 @@ export default {
       })
       this.isChangePwd = false
     },
+    goMsg(){
+      this.$router.push('/msg').catch(()=>{})
+    }
   }
 }
 </script>
@@ -305,9 +314,22 @@ export default {
   line-height: 178px;
   text-align: center;
 }
+#logined{
+  display: flex;
+  align-items: center;
+}
 .avatar {
   width: 178px;
   height: 178px;
   display: block;
+}
+.msg-but{
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 30px;
+  color: #777777;
+  cursor: pointer;
+  height: 20px;
 }
 </style>

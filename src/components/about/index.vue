@@ -21,7 +21,30 @@
         <div style="color: #409EFF">备案号：湘ICP备2021003515号-1</div>
       </el-collapse-item>
       <el-collapse-item title="更新日志" name="5">
-        <div><em>2021-05-06:</em></div>
+        <div><u>2021-05-21:</u></div>
+        <div>RP++</div>
+        <br />
+        <div><u>2021-05-20:</u></div>
+        <div>新增消息提醒</div>
+        <br />
+        <div><u>2021-05-18:</u></div>
+        <div>优化登录过期验证</div>
+        <br />
+        <div><u>2021-05-10:</u></div>
+        <div>显示细节优化（创建相册图片的可选提示）</div>
+        <br />
+        <div><u>2021-05-09:</u></div>
+        <div>登录过期时长为1天</div>
+        <div>创建相册能够立即生效</div>
+        <div>优化显示...</div>
+        <div>可以从图片详情界面点击图片查看大图</div>
+        <div>刷新页面后左侧导航栏被选中图标正确显示</div>
+        <br />
+        <div><u>2021-05-07:</u></div>
+        <div>上传图片大小限制从1M改为5M</div>
+        <div>修改头像存在延迟...</div>
+        <br />
+        <div><u>2021-05-06:</u></div>
         <div>刷新界面不会404了</div>
         <div>退出登录可以正常跳回主页</div>
         <div>相册详情界面，用户名显示合理化</div>
@@ -32,19 +55,7 @@
         <div><del>修改个人信息可以立即生效了吧（网络延迟请手动F5刷新网页）</del></div>
         <div>可点击部分鼠标悬停显示</div>
         <br />
-        <div><em>2021-05-07:</em></div>
-        <div>上传图片大小限制从1M改为5M</div>
-        <div>修改头像存在延迟...</div>
-        <br />
-        <div><em>2021-05-09:</em></div>
-        <div>登录过期时长为1天</div>
-        <div>创建相册能够立即生效</div>
-        <div>优化显示...</div>
-        <div>可以从图片详情界面点击图片查看大图</div>
-        <div>刷新页面后左侧导航栏被选中图标正确显示</div>
-        <br />
-        <div><em>2021-05-10:</em></div>
-        <div>显示细节优化（创建相册图片的可选提示）</div>
+        <div></div>
       </el-collapse-item>
     </el-collapse>
   </div>

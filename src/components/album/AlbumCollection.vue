@@ -1,9 +1,11 @@
 <template>
   <!-- 相册分页显示器 -->
   <div id="AlbumCollection" :style="getContainerStyle">
-    <div class="add-album" :style="getCellStyle(0)" @click="createAlbum">
-      <i class="icon-add" />
-    </div>
+    <el-tooltip class="item" effect="dark" content="创建相册" placement="right">
+      <div class="add-album" :style="getCellStyle(0)" @click="createAlbum">
+        <i class="icon-add" />
+      </div>
+    </el-tooltip>
     <div v-for="(item,ind) in items" :key="ind" class="cell-container" :style="getCellStyle(ind+1)">
       <slot name="cell" :data="item" />
     </div>

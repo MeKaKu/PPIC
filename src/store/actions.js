@@ -13,5 +13,8 @@ export default {
   },
   setIsDelete: ({commit},param) => {
     commit('setIsDelete',param)
-  }
+  },
+  setMsgCount: ({commit},param) => {
+    commit('setMsgCount',param)
+  },
 }

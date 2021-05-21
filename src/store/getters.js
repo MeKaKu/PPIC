@@ -8,4 +8,5 @@ export default {
   isLogined: state => state.isLogined,
   pictureBaseUrl: state => state.pictureBaseUrl,
   isDelete: state => state.isDelete,
+  msgCount: state => state.msgCount,
 }

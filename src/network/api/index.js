@@ -6,6 +6,7 @@ import commentLiked from "./commentLiked";
 import album from "./album";
 import collection from "@/network/api/collection";
 import milvus from "@/network/api/milvus";
+import msg from "@/network/api/msg";
 
 const api = {
   user,
@@ -16,6 +17,7 @@ const api = {
   album,
   collection,
   milvus,
+  msg,
 }
 
 export default api

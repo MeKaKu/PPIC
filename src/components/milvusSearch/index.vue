@@ -1,5 +1,5 @@
 <template>
-  <div id="forum">
+  <div id="milvusSearch">
     <h2>上传图片搜索相似的图片</h2>
 <!--    <el-button icon="el-icon-search" circle @click="test"></el-button>-->
     <el-upload
@@ -34,7 +34,7 @@ import InfCollection from "@/components/publicCom/InfCollection";
 import ImgItem from "@/components/pictureStream/ImgItem";
 import {getClient} from "@/utils/dom";
 export default {
-  name: "index",
+  name: "milvusSearch",
   components: {
     InfCollection,
     ImgItem,
@@ -143,7 +143,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-#forum{
+#milvusSearch{
 
 }
 .uploader{

@@ -13,8 +13,8 @@ const routes = [
     component: () => import('@/components/pictureStream/PictureStream'),
   },
   {
-    path: '/forum',
-    component: () => import('@/components/forum'),
+    path: '/milvusSearch',
+    component: () => import('@/components/milvusSearch'),
   },
   {
     path: '/album',
@@ -51,6 +51,10 @@ const routes = [
   {
     path: '/about',
     component: () => import('@/components/about')
+  },
+  {
+    path: '/msg',
+    component: () => import('@/components/msg')
   }
 ]
 
